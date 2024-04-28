@@ -16,6 +16,8 @@
 
             --title-font-size: 0.9rem;
             --href-font-size: 0.7rem;
+            --href-width: 160px;
+            --href-max-width: 160px;
         }
     }
 
@@ -37,6 +39,8 @@
 
             --title-font-size: 1.1rem;
             --href-font-size: 1rem;
+            --href-width: 250px;
+            --href-max-width: 80%;
         }
     }
 
@@ -58,6 +62,8 @@
 
             --title-font-size: 1.2rem;
             --href-font-size: 1rem;
+            --href-width: 400px;
+            --href-max-width: 80%;
         }
     }
 
@@ -79,6 +85,8 @@
 
             --title-font-size: 1.3rem;
             --href-font-size: 0.8rem;
+            --href-width: 400px;
+            --href-max-width: 80%;
         }
     }
 }
@@ -111,16 +119,22 @@
 .Link-content {
     width: var(--content-width);
     height: var(--content-height);
-    .Link-title {
-        font-size: var(--title-font-size);
-        color: var(--fgPrimary);
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-    .Link-href {
-        font-size: var(--href-font-size);
-        color: var(--fgSecondary);
-    }
+}
+.Link-title {
+    font-size: var(--title-font-size);
+    color: var(--fgPrimary);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.Link-href {
+    display: block;
+    font-size: var(--href-font-size);
+    color: var(--fgSecondary);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: var(--href-width);
+    max-width: var(--href-max-width);
 }
 
 .Link-cta {
