@@ -1,0 +1,37 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fgPrimary: #f8f9fa;
+        --fgSecondary: #6c757d;
+        --bgPrimary: #343a40;
+        --bgSecondary: #495057;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --fgPrimary: #212529;
+        --fgSecondary: #495057;
+        --bgPrimary: #f8f9fa;
+        --bgSecondary: #e9ecef;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--fgPrimary);
+    background-color: var(--bgPrimary);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}

@@ -1,0 +1,85 @@
+@media screen {
+    @media (min-width: 375px) and (max-width: 768px) {
+        :root {
+            --container-padding: 1rem;
+            --container-margin: 1rem;
+            --container-width: 90%;
+            --container-height: 70px;
+
+            --content-padding: 0.3rem;
+            --content-margin: 0.5rem;
+            --content-width: 100%;
+            
+            --icon-size: 30px;
+            --icon-padding: 10px;
+            --icon-margin: 0.8rem;
+
+            --title-font-size: 0.9rem;
+            --href-font-size: 0.7rem;
+        }
+    }
+    @media (min-width: 769px) {
+        :root {
+            --container-padding: 1rem;
+            --container-margin: 1rem;
+            --container-width: 70%;
+            --container-height: 70px;
+
+            --content-padding: 0.3rem;
+            --content-margin: 0.5rem;
+            --content-width: 100%;
+            
+            --icon-size: 30px;
+            --icon-padding: 10px;
+            --icon-margin: 0.8rem;
+
+            --title-font-size: 1.1rem;
+            --href-font-size: 0.8rem;
+        }
+    }
+}
+
+.Link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bgSecondary);
+    border-radius: 0.25rem;
+    padding: var(--container-padding);
+    margin-bottom: 0.5rem;
+    width: var(--container-width);
+    height: var(--container-height);
+}
+
+.Link:first-child{
+    margin-top: var(--container-margin);
+}
+
+
+.Link-icon {
+    padding: var(--icon-padding);
+    margin-right: var(--icon-margin);
+    background-color: var(--bgPrimary);
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.Link-content {
+    width: var(--content-width);
+    height: var(--content-height);
+    .Link-title {
+        font-size: var(--title-font-size);
+        color: var(--fgPrimary);
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .Link-href {
+        font-size: var(--href-font-size);
+        color: var(--fgSecondary);
+    }
+}
+
+.Link-cta {
+
+}
+
