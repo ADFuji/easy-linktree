@@ -18,7 +18,9 @@
             --href-font-size: 0.7rem;
         }
     }
-    @media (min-width: 769px) {
+
+    @media (min-width: 769px) and (max-width: 1520px)
+    {
         :root {
             --container-padding: 1rem;
             --container-margin: 1rem;
@@ -34,6 +36,48 @@
             --icon-margin: 0.8rem;
 
             --title-font-size: 1.1rem;
+            --href-font-size: 0.8rem;
+        }
+    }
+
+    @media (min-width: 1521px) and (max-width: 1920px)
+    {
+        :root {
+            --container-padding: 1rem;
+            --container-margin: 1rem;
+            --container-width: 50%;
+            --container-height: 90px;
+
+            --content-padding: 0.3rem;
+            --content-margin: 0.5rem;
+            --content-width: 100%;
+            
+            --icon-size: 30px;
+            --icon-padding: 10px;
+            --icon-margin: 0.8rem;
+
+            --title-font-size: 1.2rem;
+            --href-font-size: 0.8rem;
+        }
+    }
+
+    @media (min-width: 1921px)
+    {
+        :root {
+            --container-padding: 1rem;
+            --container-margin: 1rem;
+            --container-width: 40%;
+            --container-height: 90px;
+
+            --content-padding: 0.3rem;
+            --content-margin: 0.5rem;
+            --content-width: 100%;
+            
+            --icon-size: 30px;
+            --icon-padding: 10px;
+            --icon-margin: 0.8rem;
+
+            --title-font-size: 1.3rem;
             --href-font-size: 0.8rem;
         }
     }
@@ -80,6 +124,6 @@
 }
 
 .Link-cta {
-
+    display: flex;
 }
 

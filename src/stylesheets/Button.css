@@ -1,0 +1,76 @@
+@media screen {
+    @media (min-width: 375px) and (max-width: 768px)
+    {
+        :root {
+            --button-padding: 0rem;
+            --button-margin: 10px;
+            --button-width: 20px;
+            --button-height: var(--button-width);
+            --button-font-size: var(--button-width);
+        }
+    }
+    @media (min-width: 769px) and (max-width: 1520px)
+    {
+        :root {
+            --button-padding: 0.5rem;
+            --button-margin: 3px;
+            --button-width: 40px;
+            --button-height: var(--button-width);
+            --button-font-size: var(--button-width);
+        }
+    }
+    @media (min-width: 1521px) and (max-width: 1920px)
+    {
+        :root {
+            --button-padding: 0.5rem;
+            --button-margin: 2px;
+            --button-width: 45px;
+            --button-height: var(--button-width);
+            --button-font-size: var(--button-width);
+        }
+    }
+    @media (min-width: 1921px)
+    {
+        :root {
+            --button-padding: 0.5rem;
+            --button-margin: 1px;
+            --button-width: 50px;
+            --button-height: var(--button-width);
+            --button-font-size: var(--button-width);
+        }
+    }
+}
+
+.Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--button-padding);
+    margin: var(--button-margin);
+    width: var(--button-width);
+    height: var(--button-height);
+    font-size: var(--button-font-size);
+    color: var(--fgPrimary);
+    background-color: var(--bgTertiary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.IconButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: var(--button-width);
+    height: var(--button-height);
+    font-size: var(--button-font-size);
+    color: var(--fgPrimary);
+    transition: color 0.3s;
+    margin: var(--button-margin);
+    padding: var(--button-padding);
+}

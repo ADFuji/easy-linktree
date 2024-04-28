@@ -1,5 +1,9 @@
 import '../stylesheets/Link.css'
 
+import IconButton from './IconButton';
+import { FaCopy } from "react-icons/fa";
+import { IoNavigate } from "react-icons/io5";
+
 export default function Link({ 
     title,
     href,
@@ -9,6 +13,7 @@ export default function Link({
   return (
         <div className="Link">
             <div className="Link-icon">
+                <FaCopy />
             </div>
 
             <div className="Link-content">
@@ -17,7 +22,12 @@ export default function Link({
             </div>
 
             <div className="Link-cta">
-                <a href={href} target="_blank" rel="noreferrer">Visit</a>
+                <IconButton onClick={() => {window.open(href, '_blank')}}>
+                    <IoNavigate />
+                </IconButton>
+                <IconButton onClick={() => {navigator.clipboard.writeText(href)}}>
+                    <FaCopy />
+                </IconButton>
             </div>
         </div>
     );
