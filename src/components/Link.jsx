@@ -13,7 +13,6 @@ export default function Link({
   return (
         <div className="Link">
             <div className="Link-icon">
-                <FaCopy />
             </div>
 
             <div className="Link-content">

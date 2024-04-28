@@ -1,7 +1,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --fgPrimary: #f8f9fa;
-        --fgSecondary: #6c757d;
+        --fgSecondary: #e4e4e4;
         --bgPrimary: #343a40;
         --bgSecondary: #495057;
         --bgTertiary: #023c75;

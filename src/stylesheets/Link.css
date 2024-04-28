@@ -8,7 +8,7 @@
 
             --content-padding: 0.3rem;
             --content-margin: 0.5rem;
-            --content-width: 100%;
+            --content-width: 85%;
             
             --icon-size: 30px;
             --icon-padding: 10px;
@@ -29,14 +29,14 @@
 
             --content-padding: 0.3rem;
             --content-margin: 0.5rem;
-            --content-width: 100%;
+            --content-width: 80%;
             
-            --icon-size: 30px;
+            --icon-size: 50px;
             --icon-padding: 10px;
             --icon-margin: 0.8rem;
 
             --title-font-size: 1.1rem;
-            --href-font-size: 0.8rem;
+            --href-font-size: 1rem;
         }
     }
 
@@ -50,14 +50,14 @@
 
             --content-padding: 0.3rem;
             --content-margin: 0.5rem;
-            --content-width: 100%;
+            --content-width: 80%;
             
-            --icon-size: 30px;
+            --icon-size: 50px;
             --icon-padding: 10px;
             --icon-margin: 0.8rem;
 
             --title-font-size: 1.2rem;
-            --href-font-size: 0.8rem;
+            --href-font-size: 1rem;
         }
     }
 
@@ -71,9 +71,9 @@
 
             --content-padding: 0.3rem;
             --content-margin: 0.5rem;
-            --content-width: 100%;
+            --content-width: 80%;
             
-            --icon-size: 30px;
+            --icon-size: 50px;
             --icon-padding: 10px;
             --icon-margin: 0.8rem;
 
