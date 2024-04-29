@@ -18,6 +18,66 @@
     }
 }
 
+@media screen {
+    @media (min-width: 320px) {
+        :root {
+            --main-flex-direction: column;
+            --main-align-items: center;
+            --main-justify-content: center;
+            --main-width: 90%;
+            --main-pading: 0.1rem;
+            --img-width: 60%;
+            --header-font-size: 8vw;
+            --p-font-size: 6vw;
+        }
+    }
+    @media (min-width: 576px) {
+        :root {
+            --main-pading: 1rem;
+            --img-width: 50%;
+            --header-font-size: 7vw;
+            --p-font-size: 5vw;
+        }
+    }
+    @media (min-width: 700px) {
+        :root {
+            --img-width: 40%;
+            --header-font-size: 6vw;
+            --p-font-size: 4vw;
+        }
+    }
+    @media (min-width: 850px) {
+        :root {
+            --main-flex-direction: row;
+            --main-align-items: center;
+            --main-justify-content: center;
+            --main-pading: 1.2rem;
+            --img-width: 80%;
+            --header-font-size: 5vw;
+            --p-font-size: 3vw;
+        }
+    }
+    @media (min-width: 1200px) {
+        :root {
+            --main-pading: 2rem;
+            --header-font-size: 3.5vw;
+            --p-font-size: 1.5vw;
+        }
+    }
+    @media (min-width: 1921px) {
+        :root {
+            --main-flex-direction: row;
+            --main-align-items: center;
+            --main-justify-content: center;
+            --main-width: 100%;
+            --main-pading: 3rem;
+            --img-width: 90%;
+            --header-font-size: 3vw;
+            --p-font-size: 1.5vw;
+        }
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +93,44 @@ body {
 
 main {
     display: flex;
+    flex-direction: var(--main-flex-direction);
+    align-items: var(--main-align-items);
+    justify-content: var(--main-justify-content);
+    height: 100vh;
+    width: 100%;
+    padding: var(--main-pading);
+}
+
+.App-intro {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    width: var(--main-width);
+}
+
+.App-intro > img {
+    width: var(--img-width);
+    max-width: 400px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    border: 3px solid var(--fgSecondary);
+}
+
+.App-intro > h1
+{
+    font-size: var(--header-font-size);
+}
+.App-intro > p {
+    font-size: var(--p-font-size);
+}
+
+.App-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--main-width);
+    margin-left: 1rem;
+    margin-right: 1rem;
 }

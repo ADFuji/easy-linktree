@@ -3,12 +3,12 @@
         :root {
             --container-padding: 1rem;
             --container-margin: 1rem;
-            --container-width: 90%;
+            --container-width: 100%;
             --container-height: 70px;
 
             --content-padding: 0.3rem;
             --content-margin: 0.5rem;
-            --content-width: 85%;
+            --content-width: 70%;
             
             --icon-size: 30px;
             --icon-padding: 10px;
@@ -49,7 +49,7 @@
         :root {
             --container-padding: 1rem;
             --container-margin: 1rem;
-            --container-width: 50%;
+            --container-width: 100%;
             --container-height: 90px;
 
             --content-padding: 0.3rem;
@@ -99,8 +99,8 @@
     border-radius: 0.25rem;
     padding: var(--container-padding);
     margin-bottom: 0.5rem;
-    width: var(--container-width);
     height: var(--container-height);
+    width: 100%;
 }
 
 .Link:first-child{
