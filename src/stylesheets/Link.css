@@ -109,11 +109,15 @@
 
 
 .Link-icon {
-    padding: var(--icon-padding);
-    margin-right: var(--icon-margin);
-    background-color: var(--bgPrimary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Link-icon img {
     width: var(--icon-size);
     height: var(--icon-size);
+    margin-right: var(--icon-margin);
 }
 
 .Link-content {

@@ -7,7 +7,6 @@
         --bgTertiary: #023c75;
     }
 }
-
 @media (prefers-color-scheme: light) {
     :root {
         --fgPrimary: #212529;
@@ -23,10 +22,10 @@
         :root {
             --main-flex-direction: column;
             --main-align-items: center;
-            --main-justify-content: center;
             --main-width: 90%;
+            --main-height: fit-content;
             --main-pading: 0.1rem;
-            --img-width: 60%;
+            --img-width: 50%;
             --header-font-size: 8vw;
             --p-font-size: 6vw;
         }
@@ -51,6 +50,7 @@
             --main-flex-direction: row;
             --main-align-items: center;
             --main-justify-content: center;
+            --main-height: 100vh;
             --main-pading: 1.2rem;
             --img-width: 80%;
             --header-font-size: 5vw;
@@ -101,8 +101,8 @@ main {
     flex-direction: var(--main-flex-direction);
     align-items: var(--main-align-items);
     justify-content: var(--main-justify-content);
-    height: 100vh;
     width: 100%;
+    height: var(--main-height);
     padding: var(--main-pading);
 }
 
@@ -145,50 +145,4 @@ main {
     width: var(--main-width);
     margin-left: 1rem;
     margin-right: 1rem;
-}
-
-.App-notifications {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 0;
-    right: 0;
-    width: 100%;
-    padding: 1rem;
-}
-
-.App-notifications > * {
-    margin-bottom: 0.5rem;
-}
-
-.App-notification {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--bgInformation);
-    border-radius: 0.25rem;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-
-    transition: transform 0.3s ease-in-out;
-    animation: slideIn 0.3s ease-in-out;
-}
-
-@keyframes slideIn {
-    0% {
-        transform: translateY(-120%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideOut {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-120%);
-    }
 }
