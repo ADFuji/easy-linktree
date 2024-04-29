@@ -1,8 +1,11 @@
 import './stylesheets/App.css';
 
 import Link from './components/Link';
+import Notifications from './components/Notifications';
+import { useState } from 'react';
 
 function App() {
+  const [notifications, setNotifications] = useState([]);
 
   return (
     <div className="App">
@@ -18,12 +21,14 @@ function App() {
           </p>
         </div>
         <div className="App-links">
-          <Link href="https://adrien-moutet.fr/" target="_blank" title="Mon Portfolio" icon={"github"}/>
-          <Link href="https://github.com/ADFuji" target="_blank" title="Mon Github" icon={"github"}/>
-          <Link href="https://www.linkedin.com/in/adrien-moutet-821087238/" target="_blank" title="Mon LinkedIn" icon={"github"}/>
-          <Link href="https://www.malt.fr/profile/adrienmoutet" target="_blank" title="Mon Malt" icon={"github"}/>
+          <Link href="https://adrien-moutet.fr/" target="_blank" title="Mon Portfolio" icon={"github"} setNotifications={setNotifications}/>
+          <Link href="https://github.com/ADFuji" target="_blank" title="Mon Github" icon={"github"} setNotifications={setNotifications}/>
+          <Link href="https://www.linkedin.com/in/adrien-moutet-821087238/" target="_blank" title="Mon LinkedIn" icon={"github"} setNotifications={setNotifications}/>
+          <Link href="https://www.malt.fr/profile/adrienmoutet" target="_blank" title="Mon Malt" icon={"github"} setNotifications={setNotifications}/>
         </div>
       </main>
+
+      <Notifications notifications={notifications}/>
     </div>
   );
 }

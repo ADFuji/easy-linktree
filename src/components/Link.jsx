@@ -1,4 +1,5 @@
 import '../stylesheets/Link.css'
+import Notification from './Notification';
 
 import IconButton from './IconButton';
 import { FaCopy } from "react-icons/fa";
@@ -7,7 +8,8 @@ import { IoNavigate } from "react-icons/io5";
 export default function Link({ 
     title,
     href,
-    icon
+    icon,
+    setNotifications
 }) 
 {
   return (
@@ -21,10 +23,17 @@ export default function Link({
             </div>
 
             <div className="Link-cta">
-                <IconButton onClick={() => {window.open(href, '_blank')}}>
+                <IconButton onClick={() => {
+                        window.open(href, '_blank')
+                    }}>
                     <IoNavigate />
                 </IconButton>
-                <IconButton onClick={() => {navigator.clipboard.writeText(href)}}>
+                <IconButton onClick={() => {
+                        navigator.clipboard.writeText(href)
+                        setNotifications(notifications => [...notifications, <Notification key={notifications.length} 
+                            setNotifications={setNotifications}
+                            message={`Lien copié : ${href}`} />])
+                    }}>
                     <FaCopy />
                 </IconButton>
             </div>
